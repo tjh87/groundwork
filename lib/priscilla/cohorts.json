@@ -1,0 +1,82 @@
+{
+  "CL-0001": {
+    "lifeStage": "Wealth accumulation - second generation",
+    "risk": "Balanced Growth"
+  },
+  "CL-0002": {
+    "lifeStage": "Pre-liquidity event",
+    "risk": "Growth"
+  },
+  "CL-0003": {
+    "lifeStage": "Recently inherited - transition",
+    "risk": "Conservative"
+  },
+  "CL-0004": {
+    "lifeStage": "Pre-retirement",
+    "risk": "Income"
+  },
+  "CL-0005": {
+    "lifeStage": "Peak earning years",
+    "risk": "Sustainable Balanced"
+  },
+  "CL-0006": {
+    "lifeStage": "Wealth accumulation",
+    "risk": "Balanced"
+  },
+  "CL-0007": {
+    "lifeStage": "Retired - legacy and philanthropy",
+    "risk": "Balanced"
+  },
+  "CL-0008": {
+    "lifeStage": "Peak earning years",
+    "risk": "Balanced"
+  },
+  "CL-0009": {
+    "lifeStage": "Post-liquidity event",
+    "risk": "Balanced"
+  },
+  "CL-0010": {
+    "lifeStage": "Early career - next generation",
+    "risk": "Sustainable Balanced"
+  },
+  "CL-0011": {
+    "lifeStage": "Succession and estate planning",
+    "risk": "Conservative"
+  },
+  "CL-0012": {
+    "lifeStage": "Retired",
+    "risk": "Income"
+  },
+  "CL-0013": {
+    "lifeStage": "Wealth accumulation",
+    "risk": "Growth"
+  },
+  "CL-0014": {
+    "lifeStage": "Peak earning years",
+    "risk": "Balanced"
+  },
+  "CL-0015": {
+    "lifeStage": "Wealth accumulation",
+    "risk": "Dynamic Opportunistic"
+  },
+  "CL-0016": {
+    "lifeStage": "Pre-retirement",
+    "risk": "Balanced"
+  },
+  "CL-0017": {
+    "lifeStage": "Multi-generational - G2 and G3",
+    "risk": "Balanced"
+  },
+  "CL-0018": {
+    "lifeStage": "Peak earning years",
+    "risk": "Balanced"
+  },
+  "CL-0019": {
+    "lifeStage": "Peak earning years",
+    "risk": "Balanced Growth"
+  },
+  "CL-0020": {
+    "lifeStage": "Wealth accumulation",
+    "risk": "Growth"
+  }
+}

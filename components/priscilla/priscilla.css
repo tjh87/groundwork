@@ -1,0 +1,87 @@
+/* Priscilla is an additive surface. These styles do not alter the workbench theme. */
+.priscilla-safe-area { padding-bottom: 104px; }
+.priscilla-avatar { display: inline-grid; place-items: center; flex: 0 0 auto; width: 40px; height: 40px; border: 1px solid #b08d3e; border-radius: 50%; background: #122b4e; color: #e2c67c; }
+.priscilla-avatar svg { width: 21px; height: 21px; stroke-width: 1.4; }
+.priscilla-dock { position: fixed; z-index: 65; right: 28px; bottom: 28px; width: 60px; height: 60px; border-radius: 50%; box-shadow: 0 6px 24px #0b1f3a30; cursor: pointer; }
+.priscilla-dock > .priscilla-avatar { width: 60px; height: 60px; border-width: 2px; box-shadow: inset 0 0 0 4px #0b1f3a; }
+.priscilla-dock .priscilla-avatar svg { width: 29px; height: 29px; }
+.priscilla-badge { position: absolute; top: -4px; right: -4px; min-width: 25px; height: 25px; padding: 0 5px; display: grid; place-items: center; border-radius: 20px; border: 2px solid white; background: #a82e37; color: white; font-size: 11px; font-weight: 700; }
+.priscilla-health { position: absolute; right: 2px; bottom: 2px; width: 13px; height: 13px; border-radius: 50%; border: 2px solid white; }
+.priscilla-health.connecting { background: #d69732; }
+.priscilla-health.disconnected { background: #bb3540; }
+.priscilla-toast { position: fixed; z-index: 64; right: 100px; bottom: 34px; width: 380px; max-width: calc(100vw - 120px); display: flex; align-items: flex-start; gap: 8px; padding: 16px; border: 1px solid #b08d3e; border-radius: 8px; background: #122b4e; color: white; box-shadow: 0 8px 32px #0b1f3a24; }
+.priscilla-toast-body { display: flex; align-items: flex-start; gap: 12px; text-align: left; font-size: 13px; line-height: 1.6; min-width: 0; cursor: pointer; }
+.priscilla-toast-body .priscilla-avatar { width: 32px; height: 32px; }
+.priscilla-toast-close { flex-shrink: 0; display: grid; place-items: center; width: 24px; height: 24px; cursor: pointer; }
+.priscilla-scan { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; gap: 8px; min-height: 38px; padding: 8px 13px; background: #122b4e; border: 1px solid #122b4e; color: white; font-size: 12px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.priscilla-scan-short { display: none; }
+.priscilla-scan.is-scanning { animation: priscilla-pulse 1.5s ease-in-out infinite; }
+@keyframes priscilla-pulse { 50% { box-shadow: 0 0 0 4px #b08d3e40; } }
+#priscilla-chat { position: fixed; top: auto; left: auto; right: 28px; bottom: 104px; z-index: 66; display: flex; flex-direction: column; gap: 0; width: 440px; max-width: calc(100vw - 56px); height: 610px; max-height: calc(100dvh - 128px); padding: 0; transform: none; translate: none; animation: none; overflow: hidden; border: 1px solid #e6e2da; border-top: 3px solid #b08d3e; border-radius: 10px; background: white; color: #122b4e; box-shadow: 0 16px 70px #0b1f3a2e; }
+.priscilla-panel-header { display: flex; align-items: center; gap: 12px; flex: 0 0 auto; padding: 18px; background: #f7f5f1; border-bottom: 1px solid #e6e2da; }
+.priscilla-panel-header > div { flex: 1; min-width: 0; }
+.priscilla-panel-header [data-slot="dialog-title"] { font: 400 20px/1.25 Georgia, 'Times New Roman', serif; color: #122b4e; }
+.priscilla-panel-header [data-slot="dialog-description"] { margin-top: 4px; font-size: 11px; color: #5c6572; }
+.priscilla-panel-header > button { display: grid; place-items: center; width: 30px; height: 30px; flex-shrink: 0; cursor: pointer; }
+.priscilla-context { flex: 0 0 auto; padding: 10px 18px; border-bottom: 1px solid #e6e2da; font-size: 10px; line-height: 1.5; color: #5c6572; }
+.priscilla-messages { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 18px 14px; }
+.priscilla-message { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 14px; }
+.priscilla-message > .priscilla-avatar { width: 27px; height: 27px; }
+.priscilla-message > .priscilla-avatar svg { width: 16px; height: 16px; }
+.priscilla-message > p, .priscilla-message-body { max-width: calc(100% - 35px); min-width: 0; padding: 11px 13px; border: 1px solid #e6e2da; border-radius: 0 9px 9px 9px; background: #f7f5f1; color: #263449; font-size: 12px; line-height: 1.65; white-space: pre-wrap; overflow-wrap: anywhere; }
+.priscilla-message.from-user { justify-content: flex-end; }
+.priscilla-message.from-user > p, .priscilla-message.from-user > .priscilla-message-body { border-radius: 9px 0 9px 9px; border-color: #122b4e; background: #122b4e; color: white; }
+.priscilla-client-links { display: flex; flex-direction: column; gap: 7px; margin-top: 14px; padding-top: 12px; border-top: 1px solid #d2cec3; }
+.priscilla-client-links a { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 36px; padding: 7px 10px; border: 1px solid #c4ccd7; background: white; color: #122b4e; font-size: 12px; font-weight: 600; line-height: 1.5; text-decoration: none; }
+.priscilla-client-links a svg { flex-shrink: 0; }
+.priscilla-client-links a:hover { background: #edf0f7; }
+.priscilla-client-links a:focus-visible { outline: 2px solid #001489; outline-offset: 2px; }
+.priscilla-typing > p { color: #666459; font-style: italic; }
+.priscilla-empty { margin: 20px 12px 8px 35px; font-size: 12px; line-height: 1.6; color: #5c6572; }
+.priscilla-empty > div { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.priscilla-empty button { padding: 6px 9px; border: 1px solid #e6e2da; background: white; color: #122b4e; font-size: 11px; cursor: pointer; }
+.priscilla-compose { display: flex; align-items: flex-end; flex: 0 0 auto; gap: 8px; padding: 12px 16px 8px; border-top: 1px solid #e6e2da; }
+.priscilla-compose textarea { min-height: 44px; max-height: 100px; resize: vertical; font-size: 13px; background: white; color: #122b4e; border: 1px solid #d2cec3; box-shadow: none; }
+.priscilla-compose > button { display: grid; place-items: center; width: 42px; height: 42px; flex-shrink: 0; background: #122b4e; color: white; cursor: pointer; }
+.priscilla-footnote { flex: 0 0 auto; padding: 0 16px 12px; font-size: 9px; line-height: 1.5; color: #5c6572; }
+.priscilla-rail, .priscilla-inline { margin-top: 28px; border: 1px solid #e6e2da; border-top: 2px solid #b08d3e; background: #f7f5f1; color: #122b4e; padding: 24px; }
+.priscilla-section-heading { display: flex; align-items: center; gap: 14px; }
+.priscilla-section-heading h2 { margin: 2px 0 0; font: 400 28px/1.25 Georgia, 'Times New Roman', serif; color: #122b4e; }
+.priscilla-section-heading p:not(.priscilla-eyebrow) { margin-top: 6px; font-size: 13px; line-height: 1.6; }
+.priscilla-eyebrow { font-size: 10px; letter-spacing: .13em; text-transform: uppercase; color: #70654b; }
+.priscilla-source-note { margin-top: 12px; font-size: 11px; line-height: 1.6; color: #5c6572; }
+.priscilla-rail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 20px; }
+.priscilla-recommendation { min-width: 0; display: flex; flex-direction: column; border: 1px solid #e6e2da; padding: 18px; background: white; }
+.priscilla-rec-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; font-size: 10px; color: #5c6572; }
+.priscilla-type { display: inline-flex; padding: 3px 7px; border: 1px solid #e6e2da; color: #122b4e; text-transform: uppercase; font-size: 9px; letter-spacing: .08em; }
+.priscilla-type.is-urgent { border-color: #e4b5b5; background: #fff4f4; color: #982f3a; }
+.priscilla-recommendation h3 { margin-top: 15px; font: 400 21px/1.3 Georgia, 'Times New Roman', serif; color: #122b4e; }
+.priscilla-recommendation > strong { display: block; margin-top: 8px; font-size: 13px; line-height: 1.6; }
+.priscilla-recommendation > p, .priscilla-recommendation details p { margin-top: 8px; font-size: 12px; line-height: 1.7; color: #5c6572; }
+.priscilla-grounding { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 14px; }
+.priscilla-grounding > span { max-width: 100%; overflow-wrap: anywhere; background: #f7f5f1; border: 1px solid #e6e2da; padding: 3px 6px; color: #626254; font-size: 9px; line-height: 1.5; }
+.priscilla-recommendation details { margin-top: 12px; font-size: 11px; }
+.priscilla-recommendation summary { cursor: pointer; color: #122b4e; }
+.priscilla-rec-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: auto; padding-top: 16px; }
+.priscilla-rec-actions a, .priscilla-rec-actions button { display: inline-flex; align-items: center; gap: 5px; padding: 7px 9px; border: 1px solid #e6e2da; font-size: 10px; font-weight: 600; color: #122b4e; cursor: pointer; }
+.priscilla-rec-actions a { background: #122b4e; color: white; border-color: #122b4e; }
+.priscilla-text-button { margin-top: 16px; padding: 7px 0; font-size: 12px; font-weight: 600; text-decoration: underline; text-underline-offset: 4px; color: #122b4e; cursor: pointer; }
+.priscilla-inline-text { margin-top: 18px; column-count: 2; column-gap: 32px; }
+.priscilla-inline-text p { margin-bottom: 10px; font-size: 13px; line-height: 1.7; color: #364253; break-inside: avoid; }
+.priscilla-inline > [role="status"] { margin-top: 16px; font-size: 13px; }
+.priscilla-error { margin: 12px 0; padding: 10px 12px; border: 1px solid #e4b5b5; background: #fff4f4; color: #982f3a; font-size: 12px; line-height: 1.5; }
+.priscilla-error button { margin-left: 8px; font-weight: 600; text-decoration: underline; cursor: pointer; }
+.priscilla-panel > .priscilla-error { flex: 0 0 auto; margin: 0 16px 8px; font-size: 11px; }
+:is(.priscilla-panel,.priscilla-rail,.priscilla-inline) button:disabled, .priscilla-scan:disabled { opacity: .55; cursor: default; }
+:is(.priscilla-panel,.priscilla-rail,.priscilla-inline,.priscilla-toast) :is(button,a,summary):focus-visible, .priscilla-dock:focus-visible, .priscilla-scan:focus-visible { outline: 3px solid #b08d3e; outline-offset: 3px; }
+@media (max-width: 700px) {
+  .priscilla-rail-grid { grid-template-columns: minmax(0,1fr); }
+  .priscilla-inline-text { column-count: 1; }
+  .priscilla-rail, .priscilla-inline { padding: 18px; }
+  .priscilla-scan-full { display: none; }
+  .priscilla-scan-short { display: inline; }
+  .priscilla-scan { padding: 8px 10px; }
+  #priscilla-chat { right: 12px; bottom: 104px; width: calc(100vw - 24px); max-width: calc(100vw - 24px); max-height: calc(100dvh - 120px); }
+  .priscilla-toast { right: 20px; bottom: 104px; width: 380px; max-width: calc(100vw - 40px); }
+}
+@media (prefers-reduced-motion: reduce) { .priscilla-scan.is-scanning { animation: none; } }
