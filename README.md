@@ -21,7 +21,7 @@ The app has no live market feed, trade execution or automatic client messaging. 
 
 ## Stack
 
-React and TypeScript, Vinext/Vite, Cloudflare Workers, D1 with Drizzle migrations, Recharts
+React and TypeScript, Vinext/Vite, D1 with Drizzle migrations, Recharts
 
 ## Local setup
 
